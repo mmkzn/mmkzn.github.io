@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="post-container">
+    <article class="post-detail">
+        <header class="post-header">
+            <div class="post-meta-top">
+                <span class="post-date">{{ page.date | date: "%Y-%m-%d" }}</span>
+                {% if page.categories %}
+                <span class="post-category-tag">{{ page.categories }}</span>
+                {% endif %}
+            </div>
+            <h1 class="post-detail-title">{{ page.title }}</h1>
+            <div class="post-tags">
+                {% for tag in page.tags %}
+                <span class="tag"># {{ tag }}</span>
+                {% endfor %}
+            </div>
+        </header>
+
+        <div class="post-content">
+            {{ content }}
+        </div>
+
+        <div class="post-navigation">
+            {% if page.previous.url %}
+            <a href="{{ page.previous.url }}" class="nav-post prev">
+                ← {{ page.previous.title }}
+            </a>
+            {% endif %}
+            {% if page.next.url %}
+            <a href="{{ page.next.url }}" class="nav-post next">
+                {{ page.next.title }} →
+            </a>
+            {% endif %}
+        </div>
+    </article>
+</div>
