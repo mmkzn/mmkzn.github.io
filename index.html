@@ -1,14 +1,12 @@
 ---
-layout: default
-title: 首页
+layout: none
 ---
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }} | {{ site.title }}</title>
+    <title>{{ site.title }}</title>
     <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -61,7 +59,7 @@ title: 首页
                 最新文章
                 <span class="title-decoration">📝</span>
             </h2>
-            
+
             <div class="post-list">
                 {% for post in site.posts %}
                 <article class="post-card">
@@ -75,9 +73,7 @@ title: 首页
                         <a href="{{ post.url }}">{{ post.title }}</a>
                     </h3>
                     <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 100 }}</p>
-                    <a href="{{ post.url }}" class="read-more">
-                        阅读更多 →
-                    </a>
+                    <a href="{{ post.url }}" class="read-more">阅读更多 →</a>
                 </article>
                 {% endfor %}
             </div>
