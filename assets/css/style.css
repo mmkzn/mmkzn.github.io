@@ -147,7 +147,8 @@ a:hover {
 .hero {
     padding: 80px 20px;
     text-align: center;
-    background: var(--gradient-2);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
 }
 
 .hero-content {
@@ -256,7 +257,8 @@ a:hover {
 }
 
 .post-card {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
     padding: 25px 30px;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
@@ -329,7 +331,8 @@ a:hover {
 
 /* 页脚 */
 .footer {
-    background: var(--gradient-2);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
     padding: 40px 20px;
     text-align: center;
 }
@@ -351,7 +354,8 @@ a:hover {
 }
 
 .post-detail {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
@@ -459,14 +463,15 @@ a:hover {
 
 /* ===== 关于页 ===== */
 .about-card {
-    background: var(--card-bg);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(5px);
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
 }
 
 .about-header {
-    background: var(--gradient-2);
+    background: rgba(255, 255, 255, 0.6);
     padding: 50px 30px;
     text-align: center;
 }
