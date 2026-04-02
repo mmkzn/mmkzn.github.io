@@ -1,0 +1,31 @@
+---
+layout: default
+title: 文章归档
+---
+
+<main class="main-content">
+    <div class="container">
+        <h2 class="section-title">
+            <span class="title-decoration">📚</span>
+            文章归档
+            <span class="title-decoration">📚</span>
+        </h2>
+
+        <div class="archives-list">
+            {% assign postsByYear = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+            {% for year in postsByYear %}
+            <div class="year-group">
+                <h3 class="year-title">{{ year.name }}</h3>
+                <ul class="year-posts">
+                    {% for post in year.items %}
+                    <li class="archive-item">
+                        <span class="archive-date">{{ post.date | date: "%m-%d" }}</span>
+                        <a href="{{ post.url }}" class="archive-title">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</main>
