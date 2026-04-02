@@ -1,6 +1,6 @@
 title: YKJ's Blog
 description: "一个二次元风格的个人博客"
-avatar: /assets/images/avatar.svg
+avatar: /assets/images/avatar.jpg
 author: YKJ
 github_username: mmkzn
 email: 
@@ -10,18 +10,14 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
-# GitHub Pages 配置
 repository: mmkzn/mmkzn.github.io
 future: true
 
-# 分页
 paginate: 5
 paginate_path: /page:num/
 
-# 时区
 timezone: Asia/Shanghai
 
-# 默认配置
 defaults:
   - scope:
       path: ""
